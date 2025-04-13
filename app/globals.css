@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-mulish: 'Mulish', sans-serif;
+}
+
+body {
+  font-family: var(--font-mulish);
+}
+
+@layer utilities {
+  .bg-green-fade-gradient {
+    background: linear-gradient(179.72deg, rgba(46, 183, 111, 0.15) -20.76%, rgba(46, 183, 111, 0) 117.28%);
+  }
+}
