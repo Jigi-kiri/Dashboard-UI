@@ -51,11 +51,11 @@ const cities: CityData[] = [
 
 export default function ChartView() {
   return (
-    <div className="flex flex-col gap-6 bg-[#FFFFFF]">
+    <div className="flex flex-col gap-6 ">
       {/* Line chart sections */}
       <div className="flex items-center gap-[8px]">
         {/* Sales Chart */}
-        <div className="w-[349px] bg-white border border-[#F1F1F1] rounded-[12px] shadow-[0px_1px_0px_0px_rgba(0,0,0,0.12)]">
+        <div className="w-[349px] bg-[#FFFFFF] border border-[#F1F1F1] rounded-[12px] shadow-[0px_1px_0px_0px_rgba(0,0,0,0.12)]">
           <div className="flex justify-between items-center p-[12px] border-b border-[#F1F1F1]">
             <span className="text-[14px] font-semibold text-[#515153] leading-[1.429] tracking-[-1.86%] font-mulish">
               Sales (MRP)
@@ -104,7 +104,7 @@ export default function ChartView() {
         </div>
 
         {/* Quantity Chart */}
-        <div className="w-[349px] bg-white border border-[#F1F1F1] rounded-[12px] shadow-[0px_1px_0px_0px_rgba(0,0,0,0.12)]">
+        <div className="w-[349px] bg-[#FFFFFF] border border-[#F1F1F1] rounded-[12px] shadow-[0px_1px_0px_0px_rgba(0,0,0,0.12)]">
           <div className="flex justify-between items-center p-[12px] border-b border-[#F1F1F1]">
             <span className="text-[14px] font-semibold text-[#515153] leading-[1.429] tracking-[-1.86%] font-mulish">
               Total Quantity Sold
@@ -153,7 +153,7 @@ export default function ChartView() {
         </div>
 
         {/* Top Cities */}
-        <div className="flex-1 bg-white border border-[#F1F1F1] rounded-[12px] shadow-[0px_1px_0px_0px_rgba(0,0,0,0.12)]">
+        <div className="flex-1 bg-[#FFFFFF] border border-[#F1F1F1] rounded-[12px] shadow-[0px_1px_0px_0px_rgba(0,0,0,0.12)]">
           <div className="flex justify-between items-center p-[12px] border-b border-[#F1F1F1]">
             <span className="text-[14px] font-semibold text-[#515153] leading-[1.429] tracking-[-1.86%] font-mulish">
               Top Cities
@@ -166,7 +166,7 @@ export default function ChartView() {
               className="[&_path]:stroke-[#031B15]"
             />
           </div>
-          <div className="p-3 flex flex-col">
+          <div className="pt-[6px] pr-[8px] pb-[6px] pl-[8px] flex flex-col">
             <div className="relative w-32 h-32 mx-auto">
               <div className="absolute top-[35px] left-[66px] inset-0 flex items-center justify-center flex-col gap-[4px">
                 <span className="text-[13px] text-[#7D7D7E] leading-[1.231] tracking-[-2%] font-mulish">

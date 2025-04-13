@@ -155,14 +155,14 @@ export default function Table({tableData}: {tableData: TableData[]}) {
       <div className="flex">
         {/* SKU Name Column */}
         <div className="flex-[0.2] border-r border-[#F1F1F1]">
-          <div className="flex items-center gap-[8px] pt-[32px] pr-[12px] pb-[32px] pl-[12px] bg-[#FFFFFF]">
+          <div className="flex items-center gap-[8px] pt-[36px] pr-[12px] pb-[36px] pl-[12px] bg-[#FFFFFF]">
             <ChartLine className="text-[#031B15]" size={20} />
             <span className="text-[15px] font-semibold text-[#013025]">SKU Name</span>
           </div>
           {tableData.map((row, index) => (
             <div
               key={index}
-              className={`flex items-center gap-[8px] ${index===1 ? 'pt-[32px] pr-[12px] pb-[32px] pl-[12px]' : 'p-[12px]'
+              className={`flex border-t border-[#F1F1F1] items-center gap-[8px] ${index===1 ? 'pt-[32px] pr-[12px] pb-[32px] pl-[12px]' : 'p-[12px]'
                 } ${index<2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
             >
               <div className={`flex items-center w-[18px] h-[18px] rounded-[3px] border-[1px] border-[#CDD1D0] ${index < 2 ? 'bg-[#027056]': 'bg-[#FFFFFF]'}`} >
@@ -191,7 +191,7 @@ export default function Table({tableData}: {tableData: TableData[]}) {
               {tableData.map((row, index) => (
                 <div
                   key={index}
-                  className={`p-[12px] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
+                  className={`p-[12px] border-t border-[#F1F1F1] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-[14px] text-[#4E5E5A]">{row.availability.sales.current}</span>
@@ -214,7 +214,7 @@ export default function Table({tableData}: {tableData: TableData[]}) {
               {tableData.map((row, index) => (
                 <div
                   key={index}
-                  className={`p-[12px] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
+                  className={`p-[12px] border-t border-[#F1F1F1] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-[14px] text-[#4E5E5A]">{row.availability.outOfStock.current}</span>
@@ -237,7 +237,7 @@ export default function Table({tableData}: {tableData: TableData[]}) {
               {tableData.map((row, index) => (
                 <div
                   key={index}
-                  className={`p-[12px] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
+                  className={`p-[12px] border-t border-[#F1F1F1] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-[14px] text-[#4E5E5A]">{row.availability.totalInventory.current}</span>
@@ -268,7 +268,7 @@ export default function Table({tableData}: {tableData: TableData[]}) {
               {tableData.map((row, index) => (
                 <div
                   key={index}
-                  className={`p-[12px] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
+                  className={`p-[12px] border-t border-[#F1F1F1] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-[14px] text-[#4E5E5A]">{row.visibility.averageRank.current}</span>
@@ -291,7 +291,7 @@ export default function Table({tableData}: {tableData: TableData[]}) {
               {tableData.map((row, index) => (
                 <div
                   key={index}
-                  className={`p-[12px] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
+                  className={`p-[12px] border-t border-[#F1F1F1] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-[14px] text-[#4E5E5A]">{row.visibility.estTraffic.current}</span>
@@ -314,7 +314,7 @@ export default function Table({tableData}: {tableData: TableData[]}) {
               {tableData.map((row, index) => (
                 <div
                   key={index}
-                  className={`p-[12px] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
+                  className={`p-[12px] border-t border-[#F1F1F1] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-[14px] text-[#4E5E5A]">{row.visibility.estImpressions.current}</span>
@@ -337,7 +337,7 @@ export default function Table({tableData}: {tableData: TableData[]}) {
               {tableData.map((row, index) => (
                 <div
                   key={index}
-                  className={`p-[12px] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
+                  className={`p-[12px] border-t border-[#F1F1F1] ${index < 2 ? 'bg-[#F7F7F7]' : 'bg-[#FFFFFF]'}`}
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-[14px] text-[#0F5AFF]">{row.visibility.ctr.current}</span>
